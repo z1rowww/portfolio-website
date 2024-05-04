@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f77600b8df.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="header_left">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR76qcl9lpQbx-chr6YCinrqO6mmIkuF5ewwg&s" class="background">
+            <h1>h1tax</h1>
+            <div class="bio">
+                <p>I'm Zhenya, I'm 14 years old and I'm starting out as a front-end developer. :)</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+        </div>
+        <div class="header_right">
+            <div class="header_btn">
+                <i class="fa-solid fa-chevron-down"></i>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="skills">
+            <h1>Навички</h1>
+            <div class="section_row">
+                <div class="section_item">
+                    <img src="html_logo.png" alt="">
+                </div>
+                <div class="section_item">
+                    <img src="css_logo.png" alt="">
+                </div>
+                <div class="section_item">
+                    <img src="js_logo.png" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="projects">
+            <h1>Проєкти</h1>
+            <div class="section_row">
+                <div class="section_item github">
+                    <a href="https://github.com/z1rowww"> <img src="github_logo.png" alt=""></a>
+                </div>
+            </div>
+        </section>
+        <section class="contacts">
+            <h1>Контакти</h1>
+            <div class="section_row">
+                <div class="section_item">
+                    <a href='https://t.me/shadowzxqw'> <img src="tg_logo.svg" alt=""></a>
+                </div>
+                <div class="section_item">
+                   <a href="mailto:zxcursed505@gmail.com"> <img src="email_logo.png" alt=""> </&a>
+                </div>
+            </div>
+        </section>
+
+        <script>
+            // Отримуємо елемент стрілки
+            const arrowButton = document.querySelector('.header_btn');
+        
+            arrowButton.addEventListener('click', () => {
+
+                const nextSection = document.querySelector('header').nextElementSibling;
+        
+                nextSection.scrollIntoView({ behavior: 'smooth' });
+            });
+        </script>
+        
+
+        <script src="script.js"></script>
+    </main>
+    <footer>
+        <div class="footer_content">
+            Створено h1tax в 2024 | Logika
+        </div>
+    </footer>
+</body>
+</html>
