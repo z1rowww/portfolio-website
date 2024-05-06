@@ -23,7 +23,7 @@
         </div>
     </header>
     <main>
-        <section class="skills">
+        <section class="skills animate-on-scroll animated fadeIn">
             <h1>Навички</h1>
             <div class="section_row">
                 <div class="section_item">
@@ -37,7 +37,7 @@
                 </div>
             </div>
         </section>
-        <section class="projects">
+        <section class="projects animate-on-scroll animated fadeIn">
             <h1>Проєкти</h1>
             <div class="section_row">
                 <div class="section_item github">
@@ -45,37 +45,24 @@
                 </div>
             </div>
         </section>
-        <section class="contacts">
+        <section class="contacts animate-on-scroll animated fadeIn">
             <h1>Контакти</h1>
             <div class="section_row">
                 <div class="section_item">
                     <a href='https://t.me/shadowzxqw'> <img src="tg_logo.svg" alt=""></a>
                 </div>
                 <div class="section_item">
-                   <a href="mailto:zxcursed505@gmail.com"> <img src="email_logo.png" alt=""> </&a>
+                   <a href="mailto:zxcursed505@gmail.com"> <img src="email_logo.png" alt=""> </a>
                 </div>
             </div>
         </section>
-
-        <script>
-            // Отримуємо елемент стрілки
-            const arrowButton = document.querySelector('.header_btn');
-        
-            arrowButton.addEventListener('click', () => {
-
-                const nextSection = document.querySelector('header').nextElementSibling;
-        
-                nextSection.scrollIntoView({ behavior: 'smooth' });
-            });
-        </script>
-        
-
-        <script src="script.js"></script>
     </main>
     <footer>
         <div class="footer_content">
             Створено h1tax в 2024 | Logika
         </div>
     </footer>
+    <script src="anime.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
